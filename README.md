@@ -5,7 +5,7 @@
 <h1 align="center">Mustang Hub</h1>
 
 <p align="center">
-  Interactive parts &amp; maintenance hub for a 2008 Ford Mustang V6 — design direction <strong>“Night Garage.”</strong>
+  Interactive parts &amp; maintenance hub for a 2008 Ford Mustang V6
 </p>
 
 <p align="center">
