@@ -1,0 +1,68 @@
+@import "tailwindcss";
+
+:root {
+  /* surfaces + ink */
+  --void: #060607;
+  --stage: #0b0b0c;
+  --panel: #121214;
+  --raised: #1a1a1d;
+  --ink: #ecece8;
+  --ink-dim: #b9b9b2;
+  --ink-mute: #8e8e88;
+  --ink-faint: #55554f;
+  --hairline: rgba(255, 255, 255, 0.07);
+  --torch: #c8322b;
+  --title-brand: #c7a24a; /* salvage/NAM gold — title matters, not danger */
+}
+
+html,
+body {
+  background: var(--void);
+  color: var(--ink);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+body {
+  font-family: var(--font-body), system-ui, sans-serif;
+}
+
+/* Type roles */
+.font-display {
+  font-family: var(--font-display), sans-serif;
+  font-stretch: 125%;
+  font-weight: 800;
+  letter-spacing: 0.02em;
+}
+.font-data {
+  font-family: var(--font-data), monospace;
+}
+
+/* Annunciator lamp pulse — only SAFETY animates */
+@keyframes safetyPulse {
+  0%,
+  100% {
+    box-shadow: 0 0 6px 1px rgba(255, 69, 58, 0.65);
+  }
+  50% {
+    box-shadow: 0 0 14px 3px rgba(255, 69, 58, 0.95);
+  }
+}
+
+/* Hotspot ping — ambient motion on SAFETY spots only */
+@keyframes spotPing {
+  0% {
+    transform: scale(1);
+    opacity: 0.5;
+  }
+  100% {
+    transform: scale(2.1);
+    opacity: 0;
+  }
+}
+
+/* Thin scrollbars inside dark panels */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(255, 255, 255, 0.14) transparent;
+}

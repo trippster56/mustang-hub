@@ -1,0 +1,10 @@
+# What NOT to upload to Vercel. When this file exists, Vercel uses it instead of
+# .gitignore — so the personal /public/docs files (git-ignored) DO get deployed
+# and the live Documents tab keeps working, while staying out of the public repo.
+.git
+node_modules
+.next
+.vercel
+.env
+.env*.local
+.playwright-mcp

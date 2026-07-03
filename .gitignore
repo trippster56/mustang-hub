@@ -1,0 +1,33 @@
+# dependencies
+/node_modules
+
+# next.js
+/.next
+/out
+next-env.d.ts
+
+# production
+/build
+
+# vercel
+.vercel
+
+# env files (keep real secrets out of git; commit .env.example instead)
+.env
+.env*.local
+
+# personal vehicle documents — NOT committed to the (public) repo, but still
+# deployed to Vercel via .vercelignore so the live Documents tab works.
+/public/docs/carfax.pdf
+/public/docs/invoice-6459.pdf
+/public/docs/vin-placard.jpg
+/public/docs/tire-placard.jpg
+
+# misc
+.DS_Store
+*.log
+*.pem
+
+# editor / tooling
+/.playwright-mcp
+.idea
